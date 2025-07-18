@@ -1,0 +1,19 @@
+.{
+    .name = .ariadne,
+    .version = "1.0.0",
+
+    .fingerprint = 0x688701bda2349660,
+    .minimum_zig_version = "0.15.0-dev.889+b8ac740a1",
+
+    .dependencies = .{
+    },
+
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        "test",
+        "LICENSE",
+        "README.md",
+    },
+}
