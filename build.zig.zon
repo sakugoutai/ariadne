@@ -1,15 +1,14 @@
 .{
     .name = .ariadne,
-    .version = "1.0.0",
+    .version = "1.0.1",
 
-    .fingerprint = 0x688701bda2349660,
-    .minimum_zig_version = "0.15.0-dev.889+b8ac740a1",
+    .fingerprint = 0x688701bda54dbcf3,
+    .minimum_zig_version = "0.15.0-dev.1254+c9ce1debe",
 
     .dependencies = .{
     },
 
     .paths = .{
-        ".gitignore",
         "build.zig",
         "build.zig.zon",
         "src",

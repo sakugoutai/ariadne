@@ -6,14 +6,16 @@ pub fn build(b: *std.Build) void {
 
     const ariadne_mod = b.addModule("ariadne", .{
         .root_source_file = b.path("src/ariadne.zig"),
-        .target           = target,
-        .optimize         = optimize,
+        .target = target,
+        .optimize = optimize,
     });
 
     const string_test = b.addTest(.{
-        .root_source_file = b.path("test/test_string.zig"),
-        .target           = target,
-        .optimize         = optimize,
+        .root_module = b.createModule(.{
+            .root_source_file = b.path("test/test_string.zig"),
+            .target = target,
+            .optimize = optimize,
+        }),
     });
     string_test.root_module.addImport("ariadne", ariadne_mod);
 
